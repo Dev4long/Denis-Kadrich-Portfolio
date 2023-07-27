@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Nice';
+  src: url('./fonts/Pacifico-Regular.ttf') format('truetype');
+  
+}
+
+body{
+  background: rgb(18, 18, 18);
+}
