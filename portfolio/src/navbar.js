@@ -12,6 +12,10 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import RocketLaunchOutlinedIcon from '@mui/icons-material/RocketLaunchOutlined';
 import SettingsSuggestOutlinedIcon from '@mui/icons-material/SettingsSuggestOutlined';
+import { HashRouter as Router, Routes, Link, Route } from 'react-router-dom';
+import Projects from './projects.js';
+import Home from './home.js'
+import Skills from './Skills.js'
 
 const pages = ['Home', 'Skills', 'Projects'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -19,6 +23,7 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  // const [activeComponent, setActiveComponent] = React.useState(1);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -35,7 +40,11 @@ function ResponsiveAppBar() {
     setAnchorElUser(null);
   };
 
+  
+
+
   return (
+    <Router>
     <AppBar position="static" sx={{ backgroundColor: "black" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -53,7 +62,6 @@ function ResponsiveAppBar() {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
-              color: "white"
             }}
           >
             DENIS KADRICH
@@ -121,6 +129,8 @@ function ResponsiveAppBar() {
             {pages.map((page) => (
               <Button
                 key={page}
+                component={Link}
+                to={`/${page.toLowerCase()}`}
                 onClick={handleCloseNavMenu}
                 sx={{ mx: 4, my: 2, color: "rgb(0, 219, 219)", display: 'block',fontFamily: 'Nice' }}
               >
@@ -163,6 +173,13 @@ function ResponsiveAppBar() {
         </Toolbar>
       </Container>
     </AppBar>
+    <Routes>
+    <Route exact path="/" element={<Home />} />
+    <Route exact path="/home" element={<Home />} />
+    <Route exact path="/skills" element={<Skills />} />
+    <Route path="/projects" element={<Projects />} />
+    </Routes>
+    </Router>
   );
 }
 export default ResponsiveAppBar;
