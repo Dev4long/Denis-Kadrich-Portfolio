@@ -1,8 +1,12 @@
 import React from 'react'
 import { useState } from "react";
 import './skills.css'
-import Profile from "./images/profile.jpeg"
-import Moon from "./images/moon.jpeg"
+import WhatsThat from "./images/whatsThat.png"
+import UrbanRider from "./images/UrbanRider.png"
+import eatLiftPray from "./images/eatLiftPray.png"
+import GrafsCalling from "./images/GrafsCalling.png"
+import MortgageCalc from "./images/MortgageCalc.png"
+import BlogPosts from "./images/BlogPosts.png"
 import Button from '@mui/material/Button';
 import KeyboardDoubleArrowLeftOutlinedIcon from '@mui/icons-material/KeyboardDoubleArrowLeftOutlined';
 import KeyboardDoubleArrowRightOutlinedIcon from '@mui/icons-material/KeyboardDoubleArrowRightOutlined';
@@ -13,37 +17,37 @@ function Skills() {
   const projects = [
     {
       id: 1,
-      title: 'Project 1',
-      image: Profile,
+      title: 'Urban Riderz',
+      image: UrbanRider,
       description: 'Description for Project 1',
     },
     {
       id: 2,
-      title: 'Project 2',
-      image: Moon,
+      title: 'Eat, Lift, Pray',
+      image: eatLiftPray,
       description: 'Description for Project 2',
     },
     {
       id: 3,
-      title: 'Project 3',
-      image: Profile,
+      title: 'WhatsThat',
+      image: WhatsThat,
       description: 'Description for Project 3',
     },{
       id: 4,
-      title: 'Project 4',
-      image: Moon,
+      title: `Graf's Calling`,
+      image: GrafsCalling,
       description: 'Description for Project 4',
     },
     {
       id: 5,
-      title: 'Project 5',
-      image: Profile,
+      title: 'Mortgage Calculator',
+      image: MortgageCalc,
       description: 'Description for Project 5',
     },
     {
       id: 6,
-      title: 'Project 6',
-      image: Moon,
+      title: 'Blog Posts',
+      image: BlogPosts,
       description: 'Description for Project 6',
     },
 
@@ -64,31 +68,28 @@ function Skills() {
   };
 
   return (
-    <div className="skillsContainer">
-      <h2 className="title">My projects</h2>
+    <div className="skillsContainer" id='projects'>
+      <h2 className="title">PROJECTS</h2>
       <div className="projectImage">
         <img src={projects[currentIndex].image} className="pic" alt="projectPic" />
       </div>
       <div className="description">
-        <h3 style={{ color: 'white', textAlign: 'center', fontSize: '1.5vw' }}>{projects[currentIndex].title}</h3>
-        <p style={{ color: 'white', fontSize: '20px', padding:"20px"}}>
+        <p style={{ color: 'white', fontSize: '20px', padding:"20px", textAlign:"center", fontFamily:"Nice"}}>
+          {projects[currentIndex].title}</p>
+        <p style={{ color: 'white', fontSize: '15px', padding:"20px", fontFamily:"Nice"}}>
         {projects[currentIndex].description}
         </p>
       </div>
       <div className="carouselContainer">
         <div className="carousel">
           {projects.map((project, index) => (
-            <div className={`carousel-item ${index === currentIndex ? 'highlighted' : ''}`} onClick={() => handleCarouselItemClick(index)} key={project.id}>
+            <div style={{ fontFamily:"Nice"}} className={`carousel-item ${index === currentIndex ? 'highlighted' : ''}`} onClick={() => handleCarouselItemClick(index)} key={project.id}>
               {project.title}
             </div>
           ))}
         </div>
-        <Button variant="outlined" onClick={prevSlide} sx={{ fontSize: 15, color: 'rgb(0, 219, 219)' }} startIcon={<KeyboardDoubleArrowLeftOutlinedIcon />}>
-          Last
-        </Button>
-        <Button variant="outlined" onClick={nextSlide} sx={{ fontSize: 15, color: 'rgb(0, 219, 219)' }} endIcon={<KeyboardDoubleArrowRightOutlinedIcon />}>
-          Next
-        </Button>
+        <Button variant="outlined" onClick={prevSlide} sx={{ fontSize: 15, color: 'rgb(0, 219, 219)', marginTop:"20px"}} startIcon={<KeyboardDoubleArrowLeftOutlinedIcon />}/>
+        <Button variant="outlined" onClick={nextSlide} sx={{ fontSize: 15, color: 'rgb(0, 219, 219)', marginTop:"20px"}} endIcon={<KeyboardDoubleArrowRightOutlinedIcon />}/>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@
     min-height: auto;
     margin: auto;
     margin-top: 100px;
-    z-index: 9999;
+    z-index: 9998;
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
     grid-template-rows: 50% 50%;
@@ -15,15 +15,57 @@
     background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.5); 
-    
+    padding: 20px;
+    border: 2px solid rgb(135, 135, 135);
+    font-family: "Nice";
 }
+  
+.skill {
+    color: #ffffff;
+  }
 
-.project{
-    border: 2px solid  rgb(0, 219, 219);
+.project {
     width: 70%;
     height: 80%;
+    border-radius: 50%; 
+    position: relative;
     margin: auto;
     box-sizing: border-box;
+    border-radius: 50%;
+    border: 5px solid rgb(0, 219, 219);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    
+}
+.one{
+  background-image: conic-gradient(from 0deg, #323232 7%, transparent 0);
+  background-color: #00DBDB;
+}
+.two{
+  background-image: conic-gradient(from 0deg, #323232 21%, transparent 0);
+  background-color: #00DBDB;
+}
+.three{
+  background-image: conic-gradient(from 0deg, #323232 17%, transparent 0);
+  background-color: #00DBDB;
+}
+.four{
+  background-image: conic-gradient(from 0deg, #323232 27%, transparent 0);
+  background-color: #00DBDB;
+}
+.five{
+  background-image: conic-gradient(from 0deg, #323232 13%, transparent 0);
+  background-color: #00DBDB;
+}
+.six{
+  background-image: conic-gradient(from 0deg, #323232 7%, transparent 0);
+  background-color: #00DBDB;
+}
+h3{
+    position: absolute;
+    top: -50px
 }
 
 @keyframes slideFromRight {
@@ -36,7 +78,7 @@
   }  
   
 
-@media (max-width: 900px) {
+@media (max-width: 1250px) {
 
     .projectContainer{
         box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.5); 

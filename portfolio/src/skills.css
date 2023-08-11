@@ -3,38 +3,56 @@
     box-sizing: border-box;
   }  */
 
+  @keyframes glowingEffect {
+    0%, 100% {
+      left: -100%;
+      opacity: 0;
+    }
+    50% {
+      left: 100%;
+      opacity: 1;
+    }
+  }
+
 .projectImage{
-    border: 2px solid red;
     max-width: 90%;
     margin: auto;
 }
 
-.description{
-    border: 2px solid red;
-    max-width: 90%;
-    /* margin: auto; */
+.skillsTitle{
+    color: rgb(0, 219, 219);
+    font-family: 'Nice';
+    font-size: 25px;
 }
 
-/* .carusel{
-    border: 2px solid red;
-    grid-column: 1/3;
-} */
+.description{
+    border: 2px solid rgb(45, 45, 45);
+    max-width: 90%;
+    border-radius: 10px;
+    /* overflow: scroll; */
+}
+
 
 .title{
-    border: 2px solid red;
     grid-column: 1/3;
     color: white;
     text-align: center;
+    font-family: "Nice";
+    color: rgb(0, 219, 219);
+    animation: glowingEffect 10s linear infinite;
 }
 
+
+
 .pic{
-    width: 400px;
-    height: 400px;
+    width: 550px;
+    height: 450px;
+    border-radius: 10px;
 }
 
 @media (max-width: 1450px) {
     .pic{
-        width: 300px;
+        width: 380px;
         height: 300px;
     }
 
@@ -56,6 +74,7 @@
     grid-gap: 50px;
     position: relative;
     justify-content: center;
+    border: 2px solid rgb(135, 135, 135);
 }
 
 @media (max-width: 1000px) {
@@ -73,55 +92,55 @@
     }
 
     .projectImage{
-        border: 2px solid red;
         max-width: 90%;
         margin: auto;
     }
     
     .description{
         border: 2px solid rgb(76, 76, 76);
+        width: 100%;
         max-width: 90%;
         margin: auto;
     }
     
-
-    
     .title{
-        border: 2px solid red;
-        color: white;
+        color: rgb(0, 219, 219);
         text-align: center;
     }
     
     .pic{
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
 
 }
 
 .carouselContainer {
-    border: 2px solid red;
     position: relative;
     width: 90%;
     overflow: hidden;
     grid-column: 1/3;
     margin: auto;
     text-align: center;
+    padding: 20px;
   }
   
   .carousel {
     display: grid;
     grid-auto-flow: column;
     overflow-x: auto;
+    gap: 10px;
   }
   
   .carousel-item {
     flex: 0 0 calc(100% / 3);
     text-align: center;
     padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #f0f0f0;
+    border: 1px solid #00DBDB;
+    background-color: #000000;
     cursor: pointer;
+    color: white;
+    border-radius: 10px;
   }
   
   .carousel-item.highlighted {
@@ -129,4 +148,5 @@
     color: white;
     transition: 1s;
   }
+
   

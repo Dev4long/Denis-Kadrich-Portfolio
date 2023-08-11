@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useState, useEffect } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -39,7 +39,28 @@ function ResponsiveAppBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+ 
+  const [activeLink, setActiveLink] = useState('home');
+  const [scrolled, setScrolled] = useState(false);
 
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    }
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [])
+
+  const onUpdateActiveLink = (value) => {
+    setActiveLink(value);
+    handleCloseNavMenu();
+  }
   
 
 
@@ -131,7 +152,7 @@ function ResponsiveAppBar() {
                 key={page}
                 component={Link}
                 to={`/${page.toLowerCase()}`}
-                onClick={handleCloseNavMenu}
+                onClick={() => onUpdateActiveLink(page.toLowerCase())}
                 sx={{ mx: 4, my: 2, color: "rgb(0, 219, 219)", display: 'block',fontFamily: 'Nice' }}
               >
                 {page}
@@ -174,10 +195,10 @@ function ResponsiveAppBar() {
       </Container>
     </AppBar>
     <Routes>
-    <Route exact path="/" element={<Home />} />
+    {/* <Route exact path="/" element={<Home />} /> */}
     <Route exact path="/home" element={<Home />} />
     <Route exact path="/skills" element={<Skills />} />
-    <Route path="/projects" element={<Projects />} />
+    <Route path="/projects" component={Projects} />
     </Routes>
     </Router>
   );

@@ -6,4 +6,9 @@
 
 body{
   background: rgb(45, 45, 45);
+  /* overflow: hidden; */
+}
+
+html{
+  scroll-behavior: smooth;
 }

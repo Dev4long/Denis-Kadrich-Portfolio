@@ -7,7 +7,7 @@ import "./home.css"
 
 function home() {
   return (
-    <div className="home-container">
+    <div id="home" className="home-container">
         <Bio />
         <CodeIcons />
     </div>

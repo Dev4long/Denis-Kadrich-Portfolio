@@ -1,0 +1,97 @@
+@media (min-width: 901px) {
+.navContainer{
+    position: fixed;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    color: white;
+    top: 0;
+    width: 100%;
+    z-index: 10000; 
+}
+
+
+.denis{
+    font-family: "Nice";
+    font-size: 35px;
+    text-align: center;
+}
+
+.links{
+    font-family: "Nice";
+    width: 80%;
+    font-size: 18px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 219, 219);
+}
+.menuIcon{
+    display: none;
+}
+
+.settings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .popUpMenuItem{
+    border: 2px solid black;
+    z-index: 100000;
+} */
+
+}
+
+@media (max-width: 900px) {
+
+    /* .popUpMenuItem{
+        border: 2px solid black;
+        z-index: 100000;
+    } */
+    .navContainer{
+        position: fixed;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        color: white;
+        top: 0;
+        width: 100%;
+        z-index: 10000; 
+    }
+
+    a{
+        text-decoration: none;
+        color: rgb(0, 219, 219);
+        font-family: "Nice";
+    }
+
+    .links{
+        display: none;
+    }
+
+    .denis{
+        font-family: "Nice";
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    .settings {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
