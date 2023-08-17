@@ -3,17 +3,6 @@
     box-sizing: border-box;
   }  */
 
-  @keyframes glowingEffect {
-    0%, 100% {
-      left: -100%;
-      opacity: 0;
-    }
-    50% {
-      left: 100%;
-      opacity: 1;
-    }
-  }
-
 .projectImage{
     max-width: 90%;
     margin: auto;
@@ -39,7 +28,7 @@
     text-align: center;
     font-family: "Nice";
     color: rgb(0, 219, 219);
-    animation: glowingEffect 10s linear infinite;
+    /* animation: glowingEffect 10s linear infinite; */
 }
 
 

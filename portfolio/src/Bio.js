@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import Profile from "./images/profile.jpeg"
 import "./bio.css"
 import Button from '@mui/material/Button';
-import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';
+import DownloadIcon from '@mui/icons-material/Download';
 import { AiFillGithub } from 'react-icons/ai';
 import { AiFillLinkedin } from 'react-icons/ai';
-import {FaCode} from 'react-icons/fa';
+import resume from './DenisResume.docx'
 
 
 
@@ -24,6 +24,7 @@ function Bio() {
     }, delta);
 
     return () => { clearInterval(ticker) };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [text])
 
   const tick = () => {
@@ -50,30 +51,32 @@ function Bio() {
     <div className ="wrapper">
     <div className="BioContainer">
             <div className="Bio" style={{color: "white"}}>
-                {/* <h4 className="welcome">Welcome to my Portfolio</h4> */}
                 <h1>{`Hi! I'm Denis`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I am a passionate and dedicated Full Stack Web Developer with a keen eye for design and a drive to create engaging and intuitive user experiences. As a graduate of Flatiron School and Year Up's Software and Development track in New York, I have gained valuable expertise in a wide range of technologies and programming languages.
+                  <p style={{fontFamily:"regular"}}>I am a passionate and dedicated Full Stack Web Developer with a keen eye for design and a drive to create engaging and intuitive user experiences. As a graduate of Flatiron School and Year Up's Software and Development track in New York, I have gained valuable expertise in a wide range of technologies and programming languages.
                   </p>
                   <div className="buttonContainer">
-                <Button variant="outlined" sx={{ fontSize: 15, color: "rgb(0, 219, 219)"}}endIcon={<MailOutlineOutlinedIcon />}>
-                    Email
+                  <a href={resume} download="Resume">
+                <Button variant="outlined" sx={{ fontSize: 15, color: "rgb(0, 219, 219)", fontFamily:"Nice"}}endIcon={<DownloadIcon />}>
+                    Resume
                 </Button>
-                <Button variant="outlined" sx={{ fontSize: 15, color: "rgb(0, 219, 219)"}}endIcon={<AiFillLinkedin  />}>
+                  </a>
+                  <a href="https://www.linkedin.com/in/denis-kadrich-7b3bb7215/" target="_blank" rel="noreferrer">
+                <Button variant="outlined" sx={{ fontSize: 15, color: "rgb(0, 219, 219)", fontFamily:"Nice"}}endIcon={<AiFillLinkedin  />}>
                     LinkedIn
                 </Button>
-                <Button variant="outlined" sx={{ fontSize: 15, color: "rgb(0, 219, 219)"}}endIcon={<AiFillGithub  />}>
+                 </a>
+                 <a href="https://github.com/Dev4long"  target="_blank" rel="noreferrer">
+                <Button variant="outlined" sx={{ fontSize: 15, color: "rgb(0, 219, 219)", fontFamily:"Nice"}}endIcon={<AiFillGithub  />}>
                     Github
                 </Button>
+                </a>
                 </div>
-                {/* <div className="code">
-                  <FaCode />
-                </div> */}
             </div>    
       </div>
             <div className="imageContainer">
                 <h4 className="welcome">Welcome to my Portfolio</h4>
                 <img className="image"src= {Profile} alt="moon" />
-                <p>"The only way to discover the limits of the possible is to go beyond them into the impossible." - Arthur C. Clarke</p>
+                <p style={{fontFamily:"regular"}}>"The only way to discover the limits of the possible is to go beyond them into the impossible." - Arthur C. Clarke</p>
             </div>
     </div>
   )

@@ -1,0 +1,115 @@
+@keyframes glowingEffect {
+    0%, 100% {
+      left: -100%;
+      opacity: 0;
+    }
+    50% {
+      left: 100%;
+      opacity: 1;
+    }
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+  }
+
+
+
+
+.textFieldLabel {
+    color: rgb(0, 219, 219) !important;
+}
+
+.code{
+   font-size: 300px;
+   animation: glowingEffect 2s linear infinite, bounce 2s infinite;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: rgb(0, 219, 219);
+}
+
+
+  @media (min-width: 901px) {
+.connectContainer{
+    width: 80%;
+    min-height: auto;
+    margin: auto;
+    margin-top: 100px;
+    z-index: 9998;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: rgb(0, 219, 219);
+    gap: 20px;
+    position: relative;
+    /* align-items: center; */
+    animation: slideFromRight 1s;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.5); 
+    padding: 50px;
+    border: 2px solid rgb(135, 135, 135);
+    font-family: "Nice";
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.connectForm{
+  border-right: 2px solid rgb(45, 45, 45);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* margin: auto; */
+}
+
+
+}
+
+@media (max-width: 900px) {
+
+
+  .connectContainer{
+    width: 70%;
+    min-height: auto;
+    margin: auto;
+    margin-top: 100px;
+    z-index: 9998;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: rgb(0, 219, 219);
+    gap: 20px;
+    position: relative;
+    /* align-items: center; */
+    animation: slideFromRight 1s;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.5); 
+    padding: 50px;
+    border: 2px solid rgb(135, 135, 135);
+    font-family: "Nice";
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.connectForm{
+  border-bottom: 2px solid rgb(45, 45, 45);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+}
