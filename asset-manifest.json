@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Dev4long/Denis-Kadrich-Portfolio/static/css/main.585d3603.css",
-    "main.js": "/Dev4long/Denis-Kadrich-Portfolio/static/js/main.a9767f9e.js",
-    "static/media/UrbanRider.png": "/Dev4long/Denis-Kadrich-Portfolio/static/media/UrbanRider.90047aa5d116cca5b31b.png",
-    "static/media/eatLiftPray.png": "/Dev4long/Denis-Kadrich-Portfolio/static/media/eatLiftPray.d05c7a56cd5b9f947221.png",
-    "static/media/whatsThat.png": "/Dev4long/Denis-Kadrich-Portfolio/static/media/whatsThat.6b37d1fda17615a9be8d.png",
-    "static/media/GrafsCalling.png": "/Dev4long/Denis-Kadrich-Portfolio/static/media/GrafsCalling.184e304292f7a2e3b35c.png",
-    "static/media/BlogPosts.png": "/Dev4long/Denis-Kadrich-Portfolio/static/media/BlogPosts.a8a3e29ca571a67ffb6b.png",
-    "static/media/profile.jpeg": "/Dev4long/Denis-Kadrich-Portfolio/static/media/profile.f7b3c3419407e6b1ebad.jpeg",
-    "static/media/Pacifico-Regular.ttf": "/Dev4long/Denis-Kadrich-Portfolio/static/media/Pacifico-Regular.c0d735fc04154e03a691.ttf",
-    "static/media/DenisResume.docx": "/Dev4long/Denis-Kadrich-Portfolio/static/media/DenisResume.7ca85d1e84cd58fea1d4.docx",
-    "static/media/Merriweather-Regular.ttf": "/Dev4long/Denis-Kadrich-Portfolio/static/media/Merriweather-Regular.da67ca8c38ef44c4773d.ttf",
-    "static/media/MortgageCalc.png": "/Dev4long/Denis-Kadrich-Portfolio/static/media/MortgageCalc.d8df21edcb78332a568f.png",
-    "index.html": "/Dev4long/Denis-Kadrich-Portfolio/index.html",
-    "main.585d3603.css.map": "/Dev4long/Denis-Kadrich-Portfolio/static/css/main.585d3603.css.map",
-    "main.a9767f9e.js.map": "/Dev4long/Denis-Kadrich-Portfolio/static/js/main.a9767f9e.js.map"
+    "main.css": "/Denis-Kadrich-Portfolio/static/css/main.81837489.css",
+    "main.js": "/Denis-Kadrich-Portfolio/static/js/main.51ed7734.js",
+    "static/media/UrbanRider.png": "/Denis-Kadrich-Portfolio/static/media/UrbanRider.90047aa5d116cca5b31b.png",
+    "static/media/eatLiftPray.png": "/Denis-Kadrich-Portfolio/static/media/eatLiftPray.d05c7a56cd5b9f947221.png",
+    "static/media/whatsThat.png": "/Denis-Kadrich-Portfolio/static/media/whatsThat.6b37d1fda17615a9be8d.png",
+    "static/media/GrafsCalling.png": "/Denis-Kadrich-Portfolio/static/media/GrafsCalling.184e304292f7a2e3b35c.png",
+    "static/media/BlogPosts.png": "/Denis-Kadrich-Portfolio/static/media/BlogPosts.a8a3e29ca571a67ffb6b.png",
+    "static/media/profile.jpeg": "/Denis-Kadrich-Portfolio/static/media/profile.f7b3c3419407e6b1ebad.jpeg",
+    "static/media/Pacifico-Regular.ttf": "/Denis-Kadrich-Portfolio/static/media/Pacifico-Regular.c0d735fc04154e03a691.ttf",
+    "static/media/DenisResume.docx": "/Denis-Kadrich-Portfolio/static/media/DenisResume.7ca85d1e84cd58fea1d4.docx",
+    "static/media/Merriweather-Regular.ttf": "/Denis-Kadrich-Portfolio/static/media/Merriweather-Regular.da67ca8c38ef44c4773d.ttf",
+    "static/media/MortgageCalc.png": "/Denis-Kadrich-Portfolio/static/media/MortgageCalc.d8df21edcb78332a568f.png",
+    "index.html": "/Denis-Kadrich-Portfolio/index.html",
+    "main.81837489.css.map": "/Denis-Kadrich-Portfolio/static/css/main.81837489.css.map",
+    "main.51ed7734.js.map": "/Denis-Kadrich-Portfolio/static/js/main.51ed7734.js.map"
   },
   "entrypoints": [
-    "static/css/main.585d3603.css",
-    "static/js/main.a9767f9e.js"
+    "static/css/main.81837489.css",
+    "static/js/main.51ed7734.js"
   ]
 }
